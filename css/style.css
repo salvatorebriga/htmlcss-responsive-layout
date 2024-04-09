@@ -8,3 +8,24 @@ reset
     box-sizing: border-box;
 }
 
+/**********
+header
+**********/
+
+header{
+    background-color: #0084fd;
+}
+
+/************
+colonne mobile
+*************/
+
+.col50{
+    width: 50%;
+    height: 50px;
+}
+
+.col33x2,
+.col33{
+    width: 100%;
+}
