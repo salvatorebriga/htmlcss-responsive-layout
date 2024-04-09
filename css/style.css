@@ -29,7 +29,8 @@ jumbo
 .planning,
 .partners,
 .with-us,
-.about{
+.about,
+.pricing{
     padding: 20px 30px;
 }
 
@@ -113,6 +114,25 @@ about
     margin-bottom: 30px;
 }
 
+/******************
+pricing
+******************/
+
+.pricing .card{
+    background-color: #ffffff;
+    height: 150px;
+    border-radius: 40px;
+    text-align: center;
+}
+
+/**************
+footer
+**************/
+
+footer{
+    background-color: #333333;
+}
+
 /************
 colonne mobile
 *************/
@@ -166,6 +186,10 @@ MEDIA*
     }
     
     .with-us .col:first-child{
+        width: 100%;
+    }
+
+    .pricing .col{
         width: 100%;
     }
 }
