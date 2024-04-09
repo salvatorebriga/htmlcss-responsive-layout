@@ -17,8 +17,32 @@ header{
 }
 
 /************
+jumbo
+************/
+
+.jumbo{
+    padding: 20px 30px;
+}
+
+.jumbo .card{
+    height: 350px;
+    background-color: #b5ddff;
+    border-radius: 20px;
+
+}
+
+.jumbo .col33x2, .col33{
+    margin-bottom: 30px;
+}
+
+/************
 colonne mobile
 *************/
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .col50{
     width: 50%;
@@ -28,4 +52,48 @@ colonne mobile
 .col33x2,
 .col33{
     width: 100%;
+}
+
+/*************
+utility
+*************/
+
+.padding-section{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.bg-purple{
+    background-color: #9792e4;
+}
+
+/**********************
+MEDIA*
+**********************/
+
+@media screen and (min-width:600px){
+
+    .col33x2,
+    .col33{
+        margin:15px;
+    }
+    
+
+    .col33x2{
+        width: calc(100% / 3 * 2 - 30px);
+    }
+
+
+    .col33{
+        width: calc(100% / 3 - 30px);
+    }
+}
+
+@media screen and (min-width: 1140px){
+
+    .container{
+        width: 1140px;
+        margin: 0 auto;
+    }
+    
 }
