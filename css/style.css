@@ -16,23 +16,66 @@ header{
     background-color: #0084fd;
 }
 
+header .col{
+    width: 50%;
+    height: 50px;
+}
+
 /************
 jumbo
 ************/
 
-.jumbo{
+.jumbo, 
+.planning,
+.partners{
     padding: 20px 30px;
 }
 
 .jumbo .card{
     height: 350px;
     background-color: #b5ddff;
-    border-radius: 20px;
-
+    border-radius: 40px;
+    text-align: center;
 }
 
-.jumbo .col33x2, .col33{
+.jumbo .colx2, .col{
     margin-bottom: 30px;
+}
+
+/**************
+planning
+***************/
+
+.planning .col{
+    width: 100%;
+}
+
+.planning .card{
+    background-color: white;
+    height: 250px;
+    border-radius: 40px;
+    text-align: center;
+}
+
+/********************
+partners
+********************/
+
+.partners .col{
+    width: 100%;
+}
+
+.partners .card{
+    background-color: #9792e4;
+    height: 450px;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.partners .card-special{
+    background-color: wheat;
+    height: 450px;
+    text-align: center;
 }
 
 /************
@@ -44,13 +87,8 @@ colonne mobile
     flex-wrap: wrap;
 }
 
-.col50{
-    width: 50%;
-    height: 50px;
-}
-
-.col33x2,
-.col33{
+.colx2,
+.col{
     width: 100%;
 }
 
@@ -59,7 +97,7 @@ utility
 *************/
 
 .padding-section{
-    padding-top: 20px;
+    padding-top: 40px;
     padding-bottom: 20px;
 }
 
@@ -73,19 +111,27 @@ MEDIA*
 
 @media screen and (min-width:600px){
 
-    .col33x2,
-    .col33{
+    .colx2,
+    .col{
         margin:15px;
+    }
+
+    .jumbo .colx2, .col{
+        margin-bottom: 15px;
     }
     
 
-    .col33x2{
+    .colx2{
         width: calc(100% / 3 * 2 - 30px);
     }
 
 
-    .col33{
+    .col{
         width: calc(100% / 3 - 30px);
+    }
+
+    .planning .col{
+        width: calc(100% / 2 - 30px);
     }
 }
 
@@ -95,5 +141,5 @@ MEDIA*
         width: 1140px;
         margin: 0 auto;
     }
-    
+
 }
