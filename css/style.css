@@ -27,7 +27,9 @@ jumbo
 
 .jumbo, 
 .planning,
-.partners{
+.partners,
+.with-us,
+.about{
     padding: 20px 30px;
 }
 
@@ -67,15 +69,48 @@ partners
 
 .partners .card{
     background-color: #9792e4;
-    height: 450px;
+    height: 150px;
     border-radius: 40px;
     text-align: center;
 }
 
 .partners .card-special{
     background-color: wheat;
-    height: 450px;
+    height: 150px;
     text-align: center;
+}
+
+/******************
+with us 
+******************/
+
+.with-us .card{
+    background-color: #ffffff;
+    height: 150px;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.with-us .col:first-child .card{
+    background-color: #9792e4;
+    height: 150px;
+    border-radius: 40px;
+    text-align: center;
+}
+
+/******************
+about
+******************/
+
+.about .card{
+    background-color: #9792e4;
+    height: 150px;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.about .colx2{
+    margin-bottom: 30px;
 }
 
 /************
@@ -129,9 +164,9 @@ MEDIA*
     .col{
         width: calc(100% / 3 - 30px);
     }
-
-    .planning .col{
-        width: calc(100% / 2 - 30px);
+    
+    .with-us .col:first-child{
+        width: 100%;
     }
 }
 
