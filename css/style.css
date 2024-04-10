@@ -6,6 +6,7 @@ reset
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /**********
@@ -14,13 +15,22 @@ header
 
 header{
     background-color: #0084fd;
-    padding: 0px 30px;
+    padding: 10px 30px;
 }
 
 header .col{
     width: calc(100% / 2);
     height: 50px;
     margin: 0px;
+}
+
+header .hamburger{
+    width: 60px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(70deg) brightness(105%) contrast(102%);
+}
+
+.nav{
+    display: none;
 }
 
 /************
@@ -150,6 +160,20 @@ utility
     background-color: #9792e4;
 }
 
+.align-l{
+    justify-content: left;
+    align-items: center;
+}
+
+.align-r{
+    justify-content: right;
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+}
+
 /**********************
 MEDIA*
 **********************/
@@ -188,6 +212,11 @@ MEDIA*
     {
         width: 100%;
     }
+
+    /**********
+    jumbo
+    **********/
+    
 }
 
 @media screen and (min-width: 1200px){
@@ -205,4 +234,53 @@ MEDIA*
         width: calc(100% / 2 - 30px);
     }
 
+    /**********
+    header
+    **********/
+
+    header .hamburger{
+        display: none;
+    }
+
+    header .nav{
+        display: flex;
+        gap: 50px;
+        list-style-type: none;
+    }
+
+    header .nav > li{
+        padding: 5px 0px;
+    }
+
+    header .nav > li:last-child{
+        background-color: white;
+        border-radius: 40px;
+        padding: 5px 20px;
+    }
+
+    header .nav > li > a{
+        text-decoration: none;
+        color: white;
+        font-size: smaller;
+    }
+
+    header .nav > li:last-child > a{
+        color: black;
+    }
+
+    header .nav > li > a:hover{
+        text-decoration: underline;
+    }
+
+    /**********
+    jumbo
+    **********/
+
+
+}
+
+@media screen and (min-width: 1300px){
+    header .nav > li > a{
+        font-size: initial;
+    }
 }
