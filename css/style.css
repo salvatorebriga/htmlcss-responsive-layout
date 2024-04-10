@@ -176,16 +176,79 @@ partners
 
 .partners .card{
     background-color: #9792e4;
-    height: 150px;
     border-radius: 40px;
     text-align: center;
+    height: 100%;
 }
 
 .partners .col:first-child > .card{
     background-color: #fff;
-    height: 150px;
     text-align: center;
 }
+
+.partners .col:first-child .card > h3{
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.partners .col:first-child .card > h2{
+    color: #9792e4;
+    font-size:45px;
+    margin-bottom: 20px;
+}
+
+.partners .col:first-child .card > p{
+    font-size:20px;
+    font-weight: 450;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+.partners .col .card{
+    padding: 50px;
+}
+
+.partners .col .card .photo{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.partners .col .card .text p{
+    color: white;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+.partners .col .card .text p > span{
+    color: white;
+    font-size: x-large;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.partners .col .card .text h3{
+    color: white;
+    font-size: 30px;
+}
+
+.v1{
+    background-image: url("../img/testimonial1.jpg");
+}
+
+.v2{
+    background-image: url("../img/testimonial2.jpg");
+}
+
+.v3{
+    background-image: url("../img/testimonial3.jpg");
+}
+
 
 /******************
 with us 
@@ -355,7 +418,35 @@ MEDIA*
     .planning .card .south:hover{
         background-color: #aba6f8;
     }
+
+    /***************
+    partners
+    ***************/
+
+    #partners{
+        padding-bottom: 60px;
+    }
+
+    .partners .col:not(:first-child) .card{
+        display: flex;
+        padding: 10px 10px;
+    }
+    
+    .partners .col .card .photo{
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .partners .col .card .text{
+        padding-top: 70px;
+        padding-right: 100px;
+        width: 60%;
+    }
 }
+
 
 @media screen and (min-width: 1200px){
 
