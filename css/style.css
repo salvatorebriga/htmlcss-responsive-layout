@@ -441,9 +441,11 @@ MEDIA*
     }
 
     .partners .col .card .text{
-        padding-top: 70px;
+        padding-top: 25px;
+        padding-left: 30px;
         padding-right: 100px;
         width: 60%;
+        text-align: left;
     }
 }
 
@@ -532,6 +534,19 @@ MEDIA*
         align-items: flex-end;
         justify-content: left;
     }
+
+    /*************
+    partners
+    **************/
+
+    .partners .col .card .text{
+        padding-top: 65px;
+        padding-left: 30px;
+        padding-right: 100px;
+        width: 60%;
+        text-align: left;
+    }
+
 }
 
 @media screen and (min-width: 1300px){
