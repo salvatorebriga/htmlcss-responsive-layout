@@ -249,6 +249,10 @@ partners
     background-image: url("../img/testimonial3.jpg");
 }
 
+.v4{
+    background-image: url("../img/about.jpg");
+}
+
 
 /******************
 with us 
@@ -317,7 +321,67 @@ with us
 about
 ******************/
 
-.about .card{
+.about .col:first-child .card{
+    padding: 90px 20px;
+    padding-bottom: 0px;
+}
+
+.about .card > h2{
+    color: #9792e4;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.about .card > p{
+    line-height: 2;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.about .photo{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.about .photo > span{
+    font-size: 60px;
+    color: #9792e4;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.about .card h3{
+    color: #9792e4;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.about .card .linkedin{
+    padding: 20px 30px;
+    background-color: #9792e4;
+    border-radius: 30px;
+    max-width: max-content;
+}
+
+.about .card .linkedin:hover{
+    background-color: #aea9eb;
+}
+
+.linkedin > i{
+    font-size: 25px;
+    margin-right: 10px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(4%) saturate(7452%) hue-rotate(276deg) brightness(103%) contrast(108%);
+}
+
+.linkedin > span{
+    font-size: 20px;
+    color: white;
 }
 
 /******************
@@ -377,6 +441,11 @@ utility
 
 .align-r{
     justify-content: right;
+    align-items: center;
+}
+
+.align-x{
+    justify-content: center;
     align-items: center;
 }
 
@@ -487,6 +556,15 @@ MEDIA*
         padding-right: 100px;
         width: 60%;
         text-align: left;
+    }
+
+    /**************
+    about
+    **************/
+
+    .about .col:last-child .card{
+        padding: 90px 20px;
+        padding-bottom: 0px;
     }
 }
 
