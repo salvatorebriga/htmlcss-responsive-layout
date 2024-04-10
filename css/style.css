@@ -256,27 +256,68 @@ with us
 
 .with-us .card{
     background-color: #ffffff;
-    height: 150px;
     border-radius: 40px;
-    text-align: center;
+    padding: 20px;
 }
 
 .with-us .col:first-child .card{
     background-color: #9792e4;
-    height: 150px;
-    border-radius: 40px;
     text-align: center;
+    padding: 0px;
+    padding-top: 35px;
+    font-size: 10px;
 }
+
+#h2-with-us{
+    color: white;
+    font-size: 40px;
+}
+
+.with-us .card{
+    background-color: #ffffff;
+    border-radius: 40px;
+    padding: 40px 30px;
+}
+
+.with-us .card h2{
+    color: #9792e4;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.with-us .card h3{
+    color: #9792e4;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.with-us .card p{
+    color: #949494;
+    line-height: 2;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.with-us .card .more{
+    padding: 10px 40px;
+    border: none;
+    background-color: #9792e4;
+    border-radius: 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.with-us .card .more:hover{
+    background-color: #aea9eb;
+}
+
 
 /******************
 about
 ******************/
 
 .about .card{
-    background-color: #9792e4;
-    height: 150px;
-    border-radius: 40px;
-    text-align: center;
 }
 
 /******************
