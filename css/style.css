@@ -6,7 +6,8 @@ reset
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
 }
 
 /**********
@@ -47,11 +48,64 @@ jumbo
 }
 
 .jumbo .card{
-    height: 350px;
     background-color: #b5ddff;
-    border-radius: 40px;
     text-align: center;
+    border-radius: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 100%;
 }
+
+.jumbo .col:first-child .card{
+    padding-bottom: 0px;
+}
+
+.jumbo h2{
+    color: #0386fd;
+    margin-bottom: 30px;
+}
+
+.jumbo .store{
+    background-color: #0386fd;
+    border-radius: 40px;
+    padding: 10px;
+    max-width: 200px;
+    margin: 0 auto;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+}
+
+.jumbo .store img{
+    width: 39px;
+    height: 100%;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7484%) hue-rotate(236deg) brightness(103%) contrast(105%);
+}
+
+.jumbo p{
+    margin-bottom: 30px;
+    line-height: 2;
+    font-weight: 500;
+    color: #5a6e7f;
+}
+
+.jumbo .phone{
+    width: 60%;
+}
+
+.jumbo .icons{
+    width: 50%;
+    margin-bottom: 20px;
+    filter: brightness(0) saturate(100%) invert(36%) sepia(87%) saturate(3757%) hue-rotate(196deg) brightness(105%) contrast(101%);
+}
+
+
 
 /**************
 planning
@@ -188,6 +242,14 @@ MEDIA*
     .jumbo .col:first-child{
         width: calc(100% / 3 * 2 - 30px);
     }
+
+    .jumbo .col:first-child .card{
+        text-align: left;
+    }
+
+    .jumbo .col:first-child .card .store{
+        width: 300px;
+    }
     
     .with-us .col:first-child{
         width: 100%;
@@ -216,7 +278,11 @@ MEDIA*
     /**********
     jumbo
     **********/
-    
+
+    .jumbo .store{
+        margin: 0;
+        margin-bottom: 40px;
+    }
 }
 
 @media screen and (min-width: 1200px){
@@ -276,11 +342,24 @@ MEDIA*
     jumbo
     **********/
 
+    .jumbo .col:first-child .card{
+        display: flex;
+    }
 
+    .phone-container{
+        width: 40%;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .text-container{
+        width: 60%;
+    }
+
+    .jumbo .phone{
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 1300px){
-    header .nav > li > a{
-        font-size: initial;
-    }
 }
