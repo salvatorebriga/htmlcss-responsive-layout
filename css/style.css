@@ -14,11 +14,13 @@ header
 
 header{
     background-color: #0084fd;
+    padding: 0px 30px;
 }
 
 header .col{
-    width: 50%;
+    width: calc(100% / 2);
     height: 50px;
+    margin: 0px;
 }
 
 /************
@@ -45,10 +47,6 @@ jumbo
 planning
 ***************/
 
-.planning .col{
-    width: 100%;
-}
-
 .planning .card{
     background-color: white;
     height: 250px;
@@ -59,10 +57,6 @@ planning
 /********************
 partners
 ********************/
-
-.partners .col{
-    width: 100%;
-}
 
 .partners .card{
     background-color: #9792e4;
@@ -180,17 +174,20 @@ MEDIA*
     }
 
     .about .col:first-child{
-        width: calc(70% - 30px);
+        width: calc(60% - 30px);
     }
 
     .about .col:last-child{
-        width: calc(30% - 30px);
+        width: calc(40% - 30px);
     }
 
-    .pricing .col{
+    .pricing .col,
+    .planning .col,
+    .partners .col,
+    footer .col
+    {
         width: 100%;
     }
-
 }
 
 @media screen and (min-width: 1200px){
