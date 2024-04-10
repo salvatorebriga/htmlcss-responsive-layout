@@ -19,9 +19,13 @@ header{
     padding: 10px 30px;
 }
 
-header .col{
-    width: calc(100% / 2);
-    height: 50px;
+header .col:first-child{
+    width: calc(20%);
+    margin: 0px;
+}
+
+header .col:last-child{
+    width: calc(80%);
     margin: 0px;
 }
 
@@ -80,6 +84,10 @@ jumbo
     align-items: center;
     justify-content: center;
     font-size: larger;
+}
+
+.jumbo .store:hover{
+    background-color: #218df3;
 }
 
 .jumbo .store img{
@@ -205,6 +213,10 @@ partners
     margin-bottom: 20px;
 }
 
+.partners .col:first-child .card{
+    padding: 10px 50px;
+}
+
 .partners .col .card{
     padding: 50px;
 }
@@ -286,7 +298,7 @@ with us
 .with-us .card h2{
     color: #9792e4;
     font-size: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .with-us .card h3{
@@ -459,6 +471,36 @@ footer{
     background-color: #333333;
 }
 
+footer .card{
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+}
+
+footer .col:last-child .card{
+    padding-bottom: 20px;
+}
+
+footer .card p{
+    color: white;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 400;
+    
+}
+
+footer .card p{
+    color: white;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+footer .card a{
+    color: #9792e4;
+}
+
 /************
 layout
 *************/
@@ -618,15 +660,20 @@ MEDIA*
     about
     **************/
 
-    .about .col:last-child .card{
-        padding: 90px 20px;
+    .about .col:first-child .card{
+        padding: 20px 20px;
+        padding-bottom: 0px;
+    }
+
+    .about .col .card{
+        padding: 20px 20px;
         padding-bottom: 0px;
     }
 
     /**************
     pricing
     **************/
-
+    
 
 }
 
@@ -656,7 +703,7 @@ MEDIA*
 
     header .nav{
         display: flex;
-        gap: 50px;
+        gap: 40px;
         list-style-type: none;
     }
 
@@ -670,10 +717,13 @@ MEDIA*
         padding: 5px 20px;
     }
 
+    header .nav > li:last-child:hover{
+        background-color: rgb(247, 242, 242);
+    }
+
     header .nav > li > a{
         text-decoration: none;
         color: white;
-        font-size: smaller;
     }
 
     header .nav > li:last-child > a{
@@ -728,7 +778,4 @@ MEDIA*
         text-align: left;
     }
 
-}
-
-@media screen and (min-width: 1300px){
 }
