@@ -111,11 +111,63 @@ jumbo
 planning
 ***************/
 
-.planning .card{
+.planning .col:first-child .card{
+    text-align: left;
+}
+
+.planning .col:first-child .card > .card-img{
+    text-align: center;
+}
+
+.planning .col:first-child .card .card-img > img{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.planning .col:first-child .card > h2{
+    color: white;
+    font-size:45px;
+    margin-bottom: 50px;
+}
+
+.planning .col:first-child .card > p{
+    color: white;
+    line-height: 2;
+    font-weight: 500;
+}
+
+.planning .col:last-child .card{
     background-color: white;
-    height: 250px;
     border-radius: 40px;
     text-align: center;
+    padding: 0px 20px;
+    padding-bottom: 20px;
+}
+
+.planning .col:last-child .card > img:first-child{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.planning .col:last-child .card > h3{
+    margin-bottom: 20px;
+}
+
+.planning .col:last-child .card > p{
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.planning .card .south{
+    width: 30px;
+    padding: 10px 20px;
+    border-radius: 100%;
+    margin: 0 auto;
+    background-color: #9792e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /********************
@@ -232,7 +284,7 @@ utility
 MEDIA*
 **********************/
 
-@media screen and (min-width:600px){
+@media screen and (min-width:768px){
 
     .col{
         margin:15px;
@@ -282,6 +334,26 @@ MEDIA*
     .jumbo .store{
         margin: 0;
         margin-bottom: 40px;
+    }
+
+
+    /*************
+    planning
+    *************/
+
+    .planning .card .south{
+        width: 50px;
+        padding: 20px 30px;
+        border-radius: 100%;
+        margin: 0 auto;
+        background-color: #9792e4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .planning .card .south:hover{
+        background-color: #aba6f8;
     }
 }
 
@@ -358,6 +430,16 @@ MEDIA*
 
     .jumbo .phone{
         width: 100%;
+    }
+
+    /*************
+    planning
+    *************/
+
+    .planning .col:last-child{
+        display: flex;
+        align-items: flex-end;
+        justify-content: left;
     }
 }
 
