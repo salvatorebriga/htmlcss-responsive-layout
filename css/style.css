@@ -41,10 +41,6 @@ jumbo
     text-align: center;
 }
 
-.jumbo .colx2, .col{
-    margin-bottom: 30px;
-}
-
 /**************
 planning
 ***************/
@@ -75,8 +71,8 @@ partners
     text-align: center;
 }
 
-.partners .card-special{
-    background-color: wheat;
+.partners .col:first-child > .card{
+    background-color: #fff;
     height: 150px;
     text-align: center;
 }
@@ -110,10 +106,6 @@ about
     text-align: center;
 }
 
-.about .colx2{
-    margin-bottom: 30px;
-}
-
 /******************
 pricing
 ******************/
@@ -134,17 +126,21 @@ footer{
 }
 
 /************
-colonne mobile
+layout
 *************/
+
+.container{
+    margin: 0 auto;
+}
 
 .row{
     display: flex;
     flex-wrap: wrap;
 }
 
-.colx2,
 .col{
     width: 100%;
+    margin-bottom: 30px;
 }
 
 /*************
@@ -166,39 +162,50 @@ MEDIA*
 
 @media screen and (min-width:600px){
 
-    .colx2,
     .col{
         margin:15px;
-    }
-
-    .jumbo .colx2, .col{
-        margin-bottom: 15px;
-    }
-    
-
-    .colx2{
-        width: calc(100% / 3 * 2 - 30px);
-    }
-
-
-    .col{
         width: calc(100% / 3 - 30px);
+    }
+
+    .jumbo .col:first-child{
+        width: calc(100% / 3 * 2 - 30px);
     }
     
     .with-us .col:first-child{
         width: 100%;
     }
 
+    .with-us .col{
+        width: calc(100% / 2 - 30px);
+    }
+
+    .about .col:first-child{
+        width: calc(70% - 30px);
+    }
+
+    .about .col:last-child{
+        width: calc(30% - 30px);
+    }
+
     .pricing .col{
         width: 100%;
     }
+
 }
 
-@media screen and (min-width: 1140px){
+@media screen and (min-width: 1200px){
 
     .container{
-        width: 1140px;
+        max-width: 1140px;
         margin: 0 auto;
+    }
+
+    .with-us .col{
+        width: calc(100% / 3 - 30px);
+    }
+
+    .planning .col{
+        width: calc(100% / 2 - 30px);
     }
 
 }
